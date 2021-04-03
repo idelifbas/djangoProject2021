@@ -10,4 +10,4 @@ class Okul(models.Model):
 
 
     def __str__(self):
-        return self.baslik  ##her objenin kendi adı görünsün
+        return self.baslik  ##her objenin adı baslık değişkeninde ki değer olarak görünsün.
