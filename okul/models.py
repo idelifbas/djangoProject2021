@@ -17,8 +17,31 @@ class İl(models.Model):
     metin = models.TextField(verbose_name='Metin')
     yayinlanmaTarihi = models.DateTimeField(verbose_name='Yayınlanma Tarihi')
 
+    def __str__(self):
+        return self.baslik
+
+class Öğretmen(models.Model):
+    baslik = models.CharField(max_length=120, verbose_name='Başlık')
+    metin = models.TextField(verbose_name='Metin')
+    yayinlanmaTarihi = models.DateTimeField(verbose_name='Yayınlanma Tarihi')
+
+    def __str__(self):
+        return self.baslik
 
 
+class Öğrenci(models.Model):
+    baslik = models.CharField(max_length=120, verbose_name='Başlık')
+    metin = models.TextField(verbose_name='Metin')
+    yayinlanmaTarihi = models.DateTimeField(verbose_name='Yayınlanma Tarihi')
+
+    def __str__(self):
+        return self.baslik
+
+
+class Sınıf(models.Model):
+    baslik = models.CharField(max_length=120, verbose_name='Başlık')
+    metin = models.TextField(verbose_name='Metin')
+    yayinlanmaTarihi = models.DateTimeField(verbose_name='Yayınlanma Tarihi')
 
     def __str__(self):
         return self.baslik
